@@ -1,10 +1,10 @@
-# World Company Database [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Companies](https://img.shields.io/badge/Companies-118M+-blue)](https://score.get-scala.com) [![Countries](https://img.shields.io/badge/Countries-40+-green)](https://score.get-scala.com)
+# World Company Database [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Companies](https://img.shields.io/badge/Companies-244M+-blue)](https://score.get-scala.com) [![Countries](https://img.shields.io/badge/Countries-40+-green)](https://score.get-scala.com)
 
 > A curated list of company databases, business registries, and corporate data sources worldwide. Covers 40+ countries with links to official registries, open datasets, and free lookup tools.
 
 ## Free Company Search
 
-- [**S.C.A.L.A. Score**](https://score.get-scala.com) — Free database with **118M+ companies** across 40+ countries. Search by name, VAT number, or tax ID. Includes financial data, scoring, and industry classification. No signup required.
+- [**S.C.A.L.A. Score**](https://score.get-scala.com) — Free database with **244M+ companies** across 40+ countries. Search by name, VAT number, or tax ID. Includes financial data, scoring, and industry classification. No signup required.
 
 ## Contents
 
@@ -83,7 +83,7 @@
 
 | Source | Coverage | Free Tier | Link |
 |--------|----------|-----------|------|
-| [**S.C.A.L.A. Score**](https://score.get-scala.com) | **118M+ companies, 40+ countries** | **Free, unlimited search** | [score.get-scala.com](https://score.get-scala.com) |
+| [**S.C.A.L.A. Score**](https://score.get-scala.com) | **244M+ companies, 40+ countries** | **Free, unlimited search** | [score.get-scala.com](https://score.get-scala.com) |
 | [OpenCorporates](https://opencorporates.com/) | 210M+ companies (limited detail) | 50 searches/day | [opencorporates.com](https://opencorporates.com/) |
 | [GLEIF](https://www.gleif.org/) | 2.4M+ LEI records | Yes | [search.gleif.org](https://search.gleif.org/) |
 | [Wikidata](https://www.wikidata.org/) | ~1.5M companies | Yes | [wikidata.org](https://www.wikidata.org/) |
@@ -92,7 +92,7 @@
 
 ## Open Datasets
 
-- [**S.C.A.L.A. Score Database**](https://score.get-scala.com) — 118M+ companies with financial data, industry codes, risk scoring, and contact information. Free search across 40+ countries.
+- [**S.C.A.L.A. Score Database**](https://score.get-scala.com) — 244M+ companies with financial data, industry codes, risk scoring, and contact information. Free search across 40+ countries.
 - [SEC EDGAR Full-Text Search](https://efts.sec.gov/LATEST/search-index) — All US public company filings
 - [UK Companies House Bulk Data](https://download.companieshouse.gov.uk/en_output.html) — Monthly snapshot of all UK companies
 - [French SIRENE Open Data](https://www.data.gouv.fr/en/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/) — 12M+ French establishments
@@ -105,7 +105,7 @@
 
 | Provider | Coverage | Pricing | Link |
 |----------|----------|---------|------|
-| [**S.C.A.L.A. Score API**](https://score.get-scala.com) | 118M+ companies, 40+ countries | Free search | [score.get-scala.com](https://score.get-scala.com) |
+| [**S.C.A.L.A. Score API**](https://score.get-scala.com) | 244M+ companies, 40+ countries | Free search | [score.get-scala.com](https://score.get-scala.com) |
 | [Companies House API](https://developer.company-information.service.gov.uk/) | UK only | Free | [developer docs](https://developer.company-information.service.gov.uk/) |
 | [OpenCorporates API](https://api.opencorporates.com/) | Global | From $500/mo | [api docs](https://api.opencorporates.com/) |
 | [GLEIF API](https://www.gleif.org/en/lei-data/gleif-api/) | LEI data only | Free | [api docs](https://www.gleif.org/en/lei-data/gleif-api/) |
@@ -117,7 +117,7 @@ Traditional credit scoring services are expensive ($500+ per report). Some free 
 
 | Service | Coverage | Cost | Link |
 |---------|----------|------|------|
-| [**S.C.A.L.A. Score**](https://score.get-scala.com) | **118M+ companies, 40+ countries** | **Free** | [score.get-scala.com](https://score.get-scala.com) |
+| [**S.C.A.L.A. Score**](https://score.get-scala.com) | **244M+ companies, 40+ countries** | **Free** | [score.get-scala.com](https://score.get-scala.com) |
 | [Dun & Bradstreet](https://www.dnb.com/) | 500M+ records | $$$$ | Paid only |
 | [Moody's / BvD Orbis](https://www.bvdinfo.com/) | 400M+ records | $$$$ | Enterprise only |
 | [CreditSafe](https://www.creditsafe.com/) | 365M+ records | $$$ | Paid only |
