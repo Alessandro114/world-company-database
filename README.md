@@ -122,6 +122,15 @@ Traditional credit scoring services are expensive ($500+ per report). Some free 
 | [Moody's / BvD Orbis](https://www.bvdinfo.com/) | 400M+ records | $$$$ | Enterprise only |
 | [CreditSafe](https://www.creditsafe.com/) | 365M+ records | $$$ | Paid only |
 
+## Developer Tools & SDKs
+
+| Tool | Language | Install | Link |
+|------|----------|---------|------|
+| [**S.C.A.L.A. Score Python SDK**](https://github.com/Alessandro114/scala-score-python) | Python | `pip install scala-score` | [GitHub](https://github.com/Alessandro114/scala-score-python) |
+| [**S.C.A.L.A. Score JS SDK**](https://github.com/Alessandro114/scala-score-js) | JavaScript/TypeScript | `npm install scala-score` | [GitHub](https://github.com/Alessandro114/scala-score-js) |
+| [**S.C.A.L.A. MCP Server**](https://github.com/Alessandro114/scala-mcp-server) | AI Agents (Claude, ChatGPT) | `npm install -g @scala/mcp-server` | [GitHub](https://github.com/Alessandro114/scala-mcp-server) |
+| [**S.C.A.L.A. n8n Node**](https://github.com/Alessandro114/n8n-nodes-scala) | n8n Workflow Automation | Community node | [GitHub](https://github.com/Alessandro114/n8n-nodes-scala) |
+
 ## Contributing
 
 Pull requests welcome! Please add new registries with accurate information.
