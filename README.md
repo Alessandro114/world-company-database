@@ -28,6 +28,7 @@
 | UK | [Companies House](https://find-and-update.company-information.service.gov.uk/) | 5M+ companies, directors, filings | Yes |
 | Germany | [Handelsregister](https://www.handelsregister.de/) | 3.5M+ companies, officers | Partial |
 | Germany | [OffeneRegister](https://offeneregister.de/) | Open mirror of Handelsregister | Yes |
+| Germany | [FirmenData](https://firmendata.com/) | 2.4M companies, financials, shareholders, UBO | Partial |
 | France | [SIRENE / INSEE](https://sirene.fr/) | 12M+ establishments | Yes |
 | France | [Pappers](https://www.pappers.fr/) | Company search + financial data | Yes |
 | Italy | [Registro Imprese](https://www.registroimprese.it/) | 6M+ companies | Partial |
@@ -110,6 +111,7 @@
 | [OpenCorporates API](https://api.opencorporates.com/) | Global | From $500/mo | [api docs](https://api.opencorporates.com/) |
 | [GLEIF API](https://www.gleif.org/en/lei-data/gleif-api/) | LEI data only | Free | [api docs](https://www.gleif.org/en/lei-data/gleif-api/) |
 | [Brreg API](https://data.brreg.no/enhetsregisteret/api/docs/index.html) | Norway only | Free | [api docs](https://data.brreg.no/) |
+| [FirmenData API](https://api.firmendata.com/v1/docs) | Germany only | Free tier | [api docs](https://api.firmendata.com/v1/docs) |
 
 ## Scoring & Credit
 
