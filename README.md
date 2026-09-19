@@ -65,7 +65,7 @@
 | Australia | [ASIC](https://connectonline.asic.gov.au/) | Company register | Partial |
 | China | [NECIPS / GSXT](https://www.gsxt.gov.cn/) | National enterprise credit | Partial |
 
-> **China (NECIPS / GSXT):** no charge, but not freely reachable. Each lookup requires a manual CAPTCHA, and the portal refused every overseas node in published [reachability testing](https://currawongweb.com/verify/china-official-source-availability/) (two independent rounds, datasets under DOI). Marked *Partial* on that basis rather than *Yes*.
+> **China (NECIPS / GSXT):** no charge, but not freely usable. Each lookup requires a manual CAPTCHA, and the portal returns **HTTP 403 on 21 of 24 overseas observations** from 19 countries in published [reachability testing](https://currawongweb.com/verify/china-official-source-availability/) (two independent rounds, datasets under DOI). It stays reachable at the network layer - TLS handshakes complete - so the refusal is application-layer, not a block. Marked *Partial* on that basis rather than *Yes*.
 
 ### Latin America
 
