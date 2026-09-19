@@ -63,7 +63,9 @@
 | Japan | [NTA Corporate Number](https://www.houjin-bangou.nta.go.jp/) | All legal entities | Yes |
 | India | [MCA](https://www.mca.gov.in/) | Company register | Partial |
 | Australia | [ASIC](https://connectonline.asic.gov.au/) | Company register | Partial |
-| China | [NECIPS](https://www.gsxt.gov.cn/) | National enterprise credit | Yes |
+| China | [NECIPS / GSXT](https://www.gsxt.gov.cn/) | National enterprise credit | Partial |
+
+> **China (NECIPS / GSXT):** no charge, but not freely reachable. Each lookup requires a manual CAPTCHA, and the portal refused every overseas node in published [reachability testing](https://currawongweb.com/verify/china-official-source-availability/) (two independent rounds, datasets under DOI). Marked *Partial* on that basis rather than *Yes*.
 
 ### Latin America
 
