@@ -6,8 +6,17 @@ A curated list of **official business registries, open company datasets and free
 
 The list is maintained by the team behind [S.C.A.L.A. Score](https://score.get-scala.com), a free company search built on public registry data (see [About S.C.A.L.A. Score](#about-scala-score) below). The list itself is vendor-neutral: registries are listed whether or not Score uses them.
 
+## New: UK Growth 100 (2022–2024)
+
+**[SCALA Growth 100 UK](https://score.get-scala.com/rankings/uk/growth-100/)**: the 100 independent UK SMEs whose turnover grew fastest from 2022 to 2024, computed only from accounts filed at [Companies House](https://find-and-update.company-information.service.gov.uk/). No applications, no fees.
+
+- Open data: [`rankings/uk-growth-100-2022-2024.csv`](rankings/uk-growth-100-2022-2024.csv) (rank, company number, town, SIC, filed turnover 2022/2023/2024, CAGR).
+- Method: turnover rising every year, 12-month company-only accounts, turnover £1.7m+ in 2022 and £4.3m–£43m in 2024, independent as far as could be confirmed from the PSC register, every company reviewed by hand (260 reviewed, 97 excluded).
+- Spotted an error? [Open an issue](../../issues) or use the contact link on the ranking page.
+
 ## Contents
 
+- [New: UK Growth 100 (2022–2024)](#new-uk-growth-100-20222024)
 - [Official business registries](#official-business-registries)
   - [Europe](#europe) · [North America](#north-america) · [Asia Pacific](#asia-pacific) · [Latin America](#latin-america) · [Africa](#africa)
 - [Open bulk datasets with a verified licence](#open-bulk-datasets-with-a-verified-licence)
