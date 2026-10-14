@@ -127,7 +127,7 @@ Other well-known bulk datasets (licence not re-checked by us, read the publisher
 What to know before you use it:
 
 - **Size.** The [API page](https://score.get-scala.com/api) shows the live record count (about 249 million on 14 October 2026). These are *records*, not verified unique companies: they include entries from map and point-of-interest data (Overture Maps, OpenStreetMap), so some records are shops, offices or other places rather than registered legal entities.
-- **Financial data is partial.** Revenue and other figures exist only for a subset of records. Every API result carries `revenue_type`: `reported` means the figure comes from filed accounts or an official source; `estimated` means S.C.A.L.A. modelled it (for example from sector and size). Estimates are not filed figures and should not be used as such.
+- **Financial data is partial.** Revenue and other figures exist only for a subset of records. Every API result carries `revenue_type`: `reported` means the figure comes from filed accounts or an official source; `estimated` means S.C.A.L.A. modelled it. Estimates are not filed figures and should not be used as such.
 - **The score is a S.C.A.L.A. model output** (0–100 with a letter grade). It is not a credit rating from a rating agency and is not a statement about any company's creditworthiness.
 - **Licences and attribution.** The per-country sources, licences and attribution statements are on the [Data sources & licences](https://score.get-scala.com/sources) page. Countries marked *to be verified* there must not be redistributed.
 
