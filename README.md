@@ -170,6 +170,7 @@ Broken link or wrong licence? [Open an issue](https://github.com/Alessandro114/w
 
 - **2026-10** — Rewrite for accuracy: removed record counts that could not be sourced, removed commercial resellers and comparison claims, removed links that no longer resolve (sirene.fr, dubaided.gov.ae, gsxt.gov.cn, NASS page), added verified open-data licences per country, Baltic and Colombian sources, API quick start, examples, contribution rules.
 - **2026-08** — Added CC BY 4.0 licence text.
+- **2026-10** — Withdrew the 100K sample file (licence review; see `DATASET.md`).
 - **2026-06** — Added a 100K sample of Score records and developer tool links.
 - **2026-05** — First version of the list.
 
