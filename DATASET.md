@@ -1,71 +1,42 @@
-# World Company Database — Sample Dataset
+# Sample dataset: `score_sample_100k.csv.gz`
 
-## Overview
+> **Status (October 2026): under licence review.** Part of the rows in this file come from sources whose licence has not been confirmed or does not allow redistribution under CC BY 4.0 (see [Known issues](#known-issues)). Do not redistribute this file until the review is complete. The list in `README.md` is not affected.
 
-A sample of **100,000 companies** from the S.C.A.L.A. Score database, which contains **244M+ companies** across 50+ countries.
+## What it is
 
-## Dataset
-
-- **File**: `score_sample_100k.csv.gz` (2.4 MB compressed, ~9.4 MB uncompressed)
-- **Rows**: 100,000 (randomly sampled)
-- **Format**: CSV with header
+100,000 records drawn at random from the [S.C.A.L.A. Score](https://score.get-scala.com) index in June 2026, across 167 country codes. Records come from public registries, open datasets and map/point-of-interest data, so not every row is a registered legal entity.
 
 ## Columns
 
-| Column | Type | Description |
-|--------|------|-------------|
-| name | text | Company name |
-| country | text | ISO 2-letter country code |
-| city | text | City |
-| province | text | Province/state |
-| postal_code | text | Postal/ZIP code |
-| legal_form | text | Legal form (LLC, GmbH, SRL, etc.) |
-| sector | text | NACE sector code |
-| sector_desc | text | Sector description |
-| status | text | Company status (active, ceased, etc.) |
-| founded | text | Founding year |
-| employees | int | Number of employees |
-| revenue | bigint | Annual revenue (EUR) |
-| net_income | bigint | Net income (EUR) |
-| total_assets | bigint | Total assets (EUR) |
-| equity | bigint | Shareholders' equity (EUR) |
-| financial_year | int | Financial year of the data |
-| score | int | S.C.A.L.A. proprietary score (0-100) |
-| grade | text | Score grade (A-F) |
-| source | text | Data source |
+| Column | Meaning |
+|--------|---------|
+| `name` | Name as given by the source |
+| `country` | Country code. Mostly ISO 3166-1 alpha-2, but the United Kingdom appears both as `GB` and as the non-ISO `UK` |
+| `city`, `province`, `postal_code` | Location as given by the source |
+| `legal_form` | Legal form, where the source provides it |
+| `sector` | Sector code or category. A NACE code for registry rows, a free-text category (e.g. `library`) for map rows |
+| `sector_desc` | Sector description, where available |
+| `status` | Status as given by the source (e.g. `active`) |
+| `founded` | Year or date of incorporation, where available |
+| `employees` | Employee count, where available |
+| `revenue`, `net_income`, `total_assets`, `equity` | Financial figures, where available. See below |
+| `financial_year` | Financial year of the figures |
+| `score`, `grade` | S.C.A.L.A. model output (0–100, letter grade). Not a credit rating |
+| `source` | Source identifier(s), comma-separated |
 
-## Country Distribution (top 10)
+## Reported vs estimated figures
 
-| Country | Companies |
-|---------|-----------|
-| BR | 18,740 |
-| US | 15,409 |
-| AU | 8,064 |
-| FR | 7,081 |
-| UK | 4,251 |
-| DE | 4,182 |
-| IN | 3,366 |
-| RU | 3,219 |
-| JP | 2,981 |
-| CN | 2,803 |
+Only 7,125 of the 100,000 rows have a revenue value, and **6,739 of those are estimates**, not filed figures. A row is estimated when its `source` contains `estimated_` (for example `sirene,estimated_cm_437`): the value was modelled by S.C.A.L.A., not read from filed accounts. Treat only rows *without* `estimated_` in `source` as taken from the named source, and check that source before relying on a figure. Currency is not normalised across all rows.
 
-## Data Sources
+## Known issues
 
-- EU Business Registries (OpenCorporates, national registries)
-- Overture Maps Foundation
-- GLEIF (Legal Entity Identifiers)
-- National open data portals (Brasil.io, data.gov.au, INSEE, etc.)
-- Wikidata
+- Rows with `reportaziende` in `source` (215) come from a third-party commercial website, not from an open dataset.
+- Rows from `osm_geofabrik` (3,729) are OpenStreetMap data, which is licensed under ODbL, not CC BY 4.0.
+- Rows from `pdl_free`, `hf_pdl`, `bigpicture`, `linkedin_profiles` and Overture Maps sources have licences that were not audited.
+- Italian (`IT`), Danish (`DK`) and United Kingdom (`GB`/`UK`) rows depend on sources whose licence is marked *to be verified* on the [Data sources & licences](https://score.get-scala.com/sources) page.
 
-## Full Database Access
+## Licence
 
-This is a small sample. The full database contains **244M+ companies** with richer data.
+The CC BY 4.0 licence of this repository covers the list in `README.md`. It does not override the terms of the sources in this file; until the review above is complete, no licence is granted for redistributing this file.
 
-- **API**: [get-scala.com/score](https://get-scala.com/score) — RESTful API with free tier
-- **MCP Server**: `npx scala-mcp-server` — for Claude, ChatGPT, and AI agents
-- **Python SDK**: `pip install scala-score`
-- **JavaScript SDK**: `npm install scala-score`
-
-## License
-
-This sample dataset is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The underlying data comes from public business registries and open data sources.
+For data with verified licences, use the [Score API](https://score.get-scala.com/api) (every response carries a `data_licences` object with the attribution required for each country) or the open datasets listed in `README.md`.
